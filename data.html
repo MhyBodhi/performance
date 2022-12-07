@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container" style="margin-bottom: 10px;display: flex;flex-direction: column;">
+    <div style="color: black;font-size: 20px">各位好,%s能力开发平台接口tps、耗时情况如下:</div>
+    <div style="">
+        <div style="color: green;margin: 20px 0 20px 0;text-indent: 30px">总计--><span style="color: red;">最大tps:%s;接口平均耗时:%sms</span> </div>
+        <div style="margin: 0 10px 10px 10px">
+            <div style="">主要接口详情:</div>
+            <table border="1" cellpadding="10" cellspacing="0" style="text-align: center;width: 100%%">
+                <thead>
+                    <tr>
+                        <th style="border:1px solid black;white-space: nowrap;">序号</th>
+                        <th style="border:1px solid black;white-space: nowrap;">请求URL</th>
+                        <th style="border:1px solid black;white-space: nowrap;">业务IP</th>
+                        <th style="border:1px solid black;white-space: nowrap;">最大tps</th>
+                        <th style="border:1px solid black;white-space: nowrap;">平均耗时(ms)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    %s
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div style="margin-top: 20px;font-weight: bold;font-style: italic">数据来源:能力开放平台nginx各节点日志</div>
+</div>
+</body>
+</html>
